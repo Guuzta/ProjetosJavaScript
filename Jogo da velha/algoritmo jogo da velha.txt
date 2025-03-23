@@ -1,0 +1,32 @@
+-Selecionar os elementos html que serão manipulados no JavaScript
+
+-definir as variáveis de controle do jogo
+ - variável para mostrar o jogador atual
+ - variável para mostrar se o jogo está ativo
+
+-definir uma variável com todas as combinações vencedoras possíveis
+
+- o algoritmo e funcionamento do código será dividido em 4 grandes blocos,
+ou nesse caso 4 funções: 1 função principal que controlará o fluxo do jogo,
+2 funções de verificação, uma que verifica a vitória e outra que verifica 
+se há empate e por último 1 função que reinicia o jogo e reseta todos os valores 
+das variáveis.
+
+
+- Função principal ()
+ - Verificar se o quadrado ja está preenchido OU se o jogo já acabou
+ - Se nenhuma das opções forem verdadeiras o quadrado é preenchido com o símbolo
+do jogador atual
+ - Verificar se houve vitória
+ - Verificar se houve empate
+ - Se nenhuma das opções forem verdadeiras é trocado de jogador
+
+
+- Verificar vitoria ()
+ - Verifica se a combinação feita pelo jogador condiz com uma das combinações vencedoras
+ - Verifica se a combinação vencedora foi feita pelo mesmo jogador
+ * para verificar as combinações são usados os métodos some() e every()
+
+- Reiniciar jogo ()
+ - Reseta as variáveis de controle para seu estado original
+ - Reseta o tabuleiro e seus valores
