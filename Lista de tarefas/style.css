@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #0e0f0f;
+}
+
+.listaDeTarefas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 80vh;
+}
+
+.listaDeTarefas .header {
+    background-color: yellow;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    color: #0e0f0f;
+}
+
+.listaDeTarefas #tarefa {
+    background-color: rgb(54, 52, 52);
+}
+
+.listaDeTarefas #tarefa li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #363434;
+    list-style: none;
+    color: white;
+    padding: 20px;
+}
+
+.listaDeTarefas #tarefa li.excluida {
+    display: none;
+}
+
+
+.listaDeTarefas #tarefa button {
+    cursor: pointer;   
+    border-radius: 100%;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.listaDeTarefas #tarefa #concluirTarefa {
+    left: 0;
+    top: 10px;
+    background-color: #0e0f0f;
+    margin-right: 20px;
+}
+
+.listaDeTarefas #tarefa li.concluida #concluirTarefa {
+    background-color: #008000;
+}
+
+.listaDeTarefas #tarefa li.concluida .texto {
+    text-decoration: line-through;
+    color: #0e0f0f;
+}
+
+.listaDeTarefas #tarefa #excluirTarefa {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #f51d1d;
+}
+
+.listaDeTarefas #inputTarefa {
+    outline: none;
+    border: none;
+    padding: 25px 13px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 17px;
+}
+
