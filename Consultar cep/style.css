@@ -1,0 +1,22 @@
+body {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(246, 229, 2);
+}
+
+.box {
+    background-color: rgb(0, 38, 128);
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form#consultarCep input {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 5px;
+}
